@@ -1,0 +1,37 @@
+/*==============================
+ This is file "KEYFRAME.CSS"
+-It is file work: For awesome 
+ pages write animation styles!
+==============================*/
+
+@keyframes brathee {
+    0% {
+        left: 0;
+        rotate: 0deg;
+    }
+
+    45% {
+        left: 0;
+        rotate: 0deg;
+    }
+
+    47% {
+        left: 0;
+        rotate: 180deg;
+    }
+
+    50% {
+        left: 0;
+        rotate: -180deg;
+    }
+
+    55% {
+        left: 0;
+        rotate: 0deg;
+    }
+
+    100% {
+        left: 0;
+        rotate: 0deg;
+    }
+}

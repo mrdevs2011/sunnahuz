@@ -1,0 +1,150 @@
+/*====================================
+ This is file "UTILITY.CSS"
+-It is file work: For awesome pages
+and books write utilitiy styles!
+=====================================*/
+
+
+
+/*-----------------------------
+ This is primary color #71baba 
+-----------------------------*/
+
+.primary-color {
+    color: var(--primary-color);
+}
+
+/*-----------------------------
+ End "This is primary color #71baba" 
+-----------------------------*/
+
+
+
+/*-----------------------
+ For in the fonts family
+-----------------------*/
+.font-bold {
+    font-weight: 700;
+}
+
+.font-normal-bold {
+    font-weight: 300;
+}
+
+.font-big {
+    font-size: 40px;
+}
+
+.font-style-italic {
+    font-style: italic;
+}
+
+.font-uppercase {
+    text-transform: uppercase;
+}
+
+/*-----------------------------
+ End "For in the fonts family"
+-----------------------------*/
+
+
+
+/*------------------------
+ For in the text's family
+------------------------*/
+
+.primary-color {
+    color: var(--primary-color);
+}
+
+.text-white {
+    color: #ffffff;
+}
+
+.arab-text-white {
+    color: #ffffff;
+}
+
+.arab {
+    font-family: 'Amiri';
+    color: #969595;
+    font-size: 15px;
+    font-weight: 900;
+}
+
+.arabic {
+    color: -#e2e8e0;
+    font-weight: 600;
+    font-family: 'Amiri';
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-decoration-none {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+
+.content a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.range {
+    color: rgb(146, 146, 146);
+}
+
+/*------------------------------
+ End "For in the text's family"
+------------------------------*/
+
+
+
+/*-----------------------
+ This is Paddings family 
+-----------------------*/
+
+.padding-top-50px {
+    padding-top: 50px;
+}
+
+.padding-30px {
+    padding: 30px;
+}
+
+/*-----------------------------
+ End "This is Paddings family" 
+-----------------------------*/
+
+
+
+/*-----------------------
+ This is Marginss family 
+-----------------------*/
+
+.margin-bottom-30px {
+    margin-bottom: 30px;
+}
+
+/*-----------------------------
+ End "This is Margins family" 
+-----------------------------*/
+
+
+
+/*----------------------
+ This is borders family 
+----------------------*/
+
+.border-bottom {
+    border-bottom: 2px solid var(--primary-color);
+}
+
+/*-----------------------------
+ End "This is Margins family" 
+-----------------------------*/

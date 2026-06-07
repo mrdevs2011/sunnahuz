@@ -1,0 +1,309 @@
+/*================================
+ This is file "MAIN.CSS"
+-It is file work: For all in the pages
+and books write root styles!
+=================================*/
+
+/*-------------------------------------------
+ This are SUNNAH.UZ all style files imports!
+-------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('2st/imports.css');
+
+/*-------------------------------------------------
+ End "This are SUNNAH.UZ all style files imports!"
+-------------------------------------------------*/
+
+
+
+/*--------------------
+ Root fixed variables 
+--------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+body {
+    padding-top: calc(var(--header-height-desktop) + 24px);
+    background-color: #1f2125;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 32px;
+}
+
+:root {
+    --header-height-desktop: 60px;
+    --primary-color: #71baba;
+    --mobile-tablet-text-size: 20px;
+    --desktop-text-size: 16px;
+    --primary-font-family: 'arial';
+    --hadis-sharh-font-family: 'inter';
+}
+
+.safe-area {
+    padding-top: calc(var(--header-height-desktop) + 24px);
+
+}
+
+/*---------------------------------------
+ This is styles root for root index.html
+"./" books list and books quotes 
+---------------------------------------*/
+
+.p-m-h-q-o {
+    color: var(--primary-color);
+    font-family: var(--primary-font-family);
+    font-weight: 700;
+    text-align: center;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.three-books {
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+
+.olim {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+/*-------------------------------------------
+ End "This is styles root for root 
+ index.html "./" books list and books quotes"
+--------------------------------------------*/
+
+
+
+/*--------------------------
+ End "Root fixed variables" 
+--------------------------*/
+
+
+
+/*----------------------
+ Book-name-heading-area
+----------------------*/
+
+.book-welcome {
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: capitalize;
+    text-align: center;
+    padding-bottom: 30px;
+    color: var(--primary-color);
+    font-family: var(--primary-font-family);
+}
+
+.book-subtext-welcome {
+    font-family: var(--primary-font-family);
+    color: var(--primary-color);
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: 600;
+}
+
+/*---------------------------
+ End "Book-name-heading-area" 
+---------------------------*/
+
+
+
+/*------------------
+ Icon is not header
+------------------*/
+
+.icon {
+    height: 30px;
+    width: 30px;
+    transition: 2s ease;
+    margin: 10px 0 20px;
+    animation: brathee 60s ease infinite;
+}
+
+/*------------------------
+ End "Icon is not header"
+------------------------*/
+
+
+
+/*-----------------------------
+ For all chapters name heading 
+-----------------------------*/
+
+.chapter-heading {
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffffff;
+    line-height: 1.5;
+    margin-bottom: 25px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--primary-color);
+    letter-spacing: 0.3px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*-----------------------------------
+ End "For all chapters name heading"
+-----------------------------------*/
+
+
+
+/*--------------
+ Box all in one
+--------------*/
+
+.box {
+    gap: 30px;
+    padding: 20px;
+    background-color: #272e32;
+    border-radius: 40px;
+    margin-bottom: 20px;
+    transition: 0.5s ease;
+}
+
+.content-parent {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.content {
+    border-radius: 40px;
+    background-color: #272e32;
+    margin-bottom: 20px;
+    transition: 0.5s;
+}
+
+.more {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 16px;
+    color: #a8a8a8;
+}
+
+/*=================================
+ WARNING: .arab and .text-white or 
+ arabic text in the utility.css !
+=================================*/
+
+.hadis-parent-name {
+    font-size: var(--desktop-text-size);
+    font-weight: 600;
+    color: #ffffff;
+}
+
+/*--------------------
+ End "Box all in one"
+ -------------------*/
+
+
+
+/*-----------------------------
+ For in the root 3 books album 
+-----------------------------*/
+
+.books {
+    margin-top: 64px;
+}
+
+.books-album {
+    display: flex;
+    justify-content: center;
+    background-color: #1f2125;
+}
+
+.books-album span {
+    padding: 0px 10px;
+}
+
+/*-----------------------------------
+ End "For in the root 3 books album" 
+-----------------------------------*/
+
+
+
+/*---------------------
+ Next-btn for chapter 
+---------------------*/
+
+.next-btn-chapter {
+    display: block;
+    width: 100%;
+    transition: 0.5s;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.next-btn-text-center {
+    position: relative;
+    left: 40%;
+}
+
+/*--------------------------
+ End "Next-btn for chapter" 
+--------------------------*/
+
+
+
+/*--------------------
+ In the book for list 
+--------------------*/
+
+.number {
+    font-size: 15px;
+    color: #a8a8a8;
+}
+
+.list-text {
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px;
+    text-align: center;
+    color: #ffffff;
+    text-transform: capitalize;
+}
+
+.range {
+    font-size: 15px;
+    color: #969595;
+}
+
+/*--------------------------
+ End "In the book for list" 
+--------------------------*/
+
+
+
+/*-----------------------------
+ Copyright for clone Sunnah.com 
+-----------------------------*/
+
+.copyright {
+    display: block;
+    text-align: center;
+    margin: 20px;
+    color: rgb(152, 152, 152);
+}
+
+.copyright a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+/*------------------------------------
+ End "Copyright for clone Sunnah.com" 
+------------------------------------*/

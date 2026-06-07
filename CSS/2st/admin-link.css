@@ -1,0 +1,24 @@
+/*=================================
+ This is file "ADMIN-LINK.CSS"
+-Admin panel link in the root index
+==================================*/
+
+.admin-link {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #71baba;
+    color: #1f2125;
+    padding: 12px 24px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(113, 186, 186, 0.4);
+    transition: all 0.3s ease;
+    z-index: 100;
+}
+
+.admin-link:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(113, 186, 186, 0.6);
+}

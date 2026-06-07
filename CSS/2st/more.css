@@ -1,0 +1,122 @@
+/*================================
+ This is file "MORE.CSS"
+-It is file work: All in the books
+writed for hadis-sharh's style
+=================================*/
+
+.hadis-sharh {
+    font-family: var(--hadis-sharh-font-family);
+    color: #cbd5e0;
+    line-height: 1.7;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.hadis-sharh h2 {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 10px;
+}
+
+.hadis-sharh h3 {
+    color: #e2e8f0;
+    font-size: 18px;
+    margin: 25px 0 10px;
+}
+
+.hadis-sharh p,
+.hadis-sharh ul {
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+.hadis-sharh ul {
+    padding-left: 20px;
+}
+
+.hadis-sharh li {
+    margin-bottom: 10px;
+}
+
+.hadis-sharh strong {
+    color: #fff;
+}
+
+.hadis-sharh hr {
+    border: 0;
+    border-top: 1px solid #4a5568;
+    margin: 20px 0;
+}
+
+.hadis-sharh blockquote {
+    background-color: #2d3748;
+    border-left: 4px solid var(--primary-color);
+    margin: 20px 0;
+    padding: 15px 20px;
+    font-style: italic;
+    color: #fff;
+    border-radius: 0 4px 4px 0;
+}
+
+.hadis-sharh blockquote .muallif {
+    display: block;
+    font-size: 15px;
+    color: #a0aec0;
+    margin-top: 5px;
+    font-style: normal;
+}
+
+.content-description {
+    font-size: 18px;
+}
+
+.back {
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s ease;
+    margin-right: 8px;
+}
+
+
+.hadis-nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    padding: 20px 0;
+    border-top: 1px solid #4a5568;
+}
+
+.hadis-nav-btn-next {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 24px;
+    background-color: #272e32;
+    color: var(--primary-color);
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: 500;
+    transition: all 0.5s ease;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+
+.hadis-nav-btn-prev {
+    display: inline-flex;
+    align-items: center;
+    opacity: 0.4;
+    gap: 10px;
+    padding: 12px;
+    background-color: #272e32;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: 500;
+    transition: all 0.5s ease;
+    border-bottom: 2px solid var(--primary-color);
+}

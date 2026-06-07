@@ -1,0 +1,91 @@
+/*=================================
+ This is file "BOOKS-GRID.CSS"
+-Books grid layout for root index
+==================================*/
+
+.books-section {
+    margin-top: 64px;
+}
+
+.section-title {
+    text-align: center;
+    margin: 2rem 0 1.5rem;
+    font-size: 20px;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.section-title-ar {
+    color: #888;
+    font-size: 0.9rem;
+    margin-left: 8px;
+}
+
+.books-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.book-card {
+    background-color: #272e32;
+    border-radius: 40px;
+    padding: 1.5rem;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    border: 2px solid transparent;
+}
+
+.book-card:hover {
+    border-color: var(--primary-color);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.book-name-uz {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.book-name-ar {
+    font-size: 16px;
+    color: #969595;
+    margin-top: 8px;
+    direction: rtl;
+    font-family: 'Amiri', serif;
+}
+
+.badge {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 12px;
+}
+
+.badge.primary {
+    background-color: #e3f2fd;
+    color: #1976d2;
+}
+
+.badge.other {
+    background-color: #f3e5f5;
+    color: #7b1fa2;
+}
+
+.badge.selected {
+    background-color: #e8f5e9;
+    color: #388e3c;
+}
+
+.footer {
+    text-align: center;
+    padding: 2rem;
+    color: #969595;
+    margin-top: 3rem;
+}

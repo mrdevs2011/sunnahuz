@@ -1,0 +1,87 @@
+/*=================================
+ This is file "HEADER.CSS"
+-It is file work: 
+All in the files fixed top header. 
+In the header:
+--Back - button
+--Sunnah.uz - icon
+--SUNNAH.COM - site name
+==================================*/
+
+
+
+/*-----------------
+ Root header fixed 
+-----------------*/
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 45px;
+    background-color: #1f2125;
+    box-shadow: 0 4px 15px #1f2125;
+    opacity: 0.9;
+    z-index: 1;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/*-----------------------
+ End "Root header fixed" 
+-----------------------*/
+
+
+
+/*-----------------------
+ Back icon in the header
+-----------------------*/
+
+.back {
+    font-size: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.3s ease;
+    margin-right: 8px;
+}
+
+/*-----------------------------
+ End "Back icon in the header"
+-----------------------------*/
+
+
+
+/*----------------------------
+ SUNNAH.UZ link in the header
+----------------------------*/
+
+.header-link {
+    font-size: 30px;
+    padding: 10px;
+    font-weight: 300;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/*----------------------------------
+ End "SUNNAH.UZ link in the header"
+----------------------------------*/
+
+
+
+/*---------------------
+ SUNNAH.UZ header-icon
+---------------------*/
+
+.icon-header {
+    width: 30px;
+    height: 30px;
+}
+
+/*---------------------------
+ End "SUNNAH.UZ header-icon"
+---------------------------*/
