@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUNNAH.UZ Admin - Boshqaruv paneli</title>
+    <link rel="stylesheet" href="../CSS/main.css">
+    <style>
+        /* Admin specific styles */
+        .admin-container {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .admin-box {
+            background-color: #272e32;
+            border: 2px solid #71baba;
+            border-radius: 40px;
+            padding: 60px;
+            text-align: center;
+            max-width: 500px;
+            width: 100%;
+        }
+
+        .admin-icon {
+            font-size: 64px;
+            margin-bottom: 20px;
+        }
+
+        .admin-title {
+            color: #71baba;
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .admin-subtitle {
+            color: #969595;
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+
+        .admin-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .admin-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 16px 32px;
+            border-radius: 40px;
+            font-weight: 600;
+            font-size: 18px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: none;
+        }
+
+        .admin-btn-primary {
+            background-color: #71baba;
+            color: #1f2125;
+        }
+
+        .admin-btn-primary:hover {
+            background-color: #5a9a9a;
+            transform: translateY(-2px);
+        }
+
+        .admin-btn-secondary {
+            background-color: transparent;
+            color: #71baba;
+            border: 2px solid #71baba;
+        }
+
+        .admin-btn-secondary:hover {
+            background-color: rgba(113, 186, 186, 0.1);
+        }
+
+        .admin-footer {
+            margin-top: 40px;
+            color: #969595;
+            font-size: 14px;
+        }
+
+        .admin-footer a {
+            color: #71baba;
+            text-decoration: none;
+        }
+
+        .admin-footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Status indicator */
+        .status-box {
+            background-color: rgba(113, 186, 186, 0.1);
+            border: 1px solid #71baba;
+            border-radius: 20px;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+
+        .status-title {
+            color: #71baba;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .status-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px solid #3a3f44;
+        }
+
+        .status-item:last-child {
+            border-bottom: none;
+        }
+
+        .status-label {
+            color: #a8a8a8;
+        }
+
+        .status-value {
+            color: #71baba;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <a href="../" class="back">←</a>
+            <span class="header-link">SUNNAH.UZ Admin</span>
+        </div>
+    </div>
+
+    <div class="container safe-area">
+        <div class="admin-container">
+            <div class="admin-box">
+                <div class="admin-icon">🔐</div>
+                <h1 class="admin-title">Admin Panel</h1>
+                <p class="admin-subtitle">Hadislar boshqaruv paneli</p>
+
+                <div class="status-box">
+                    <div class="status-title">📊 Tizim holati</div>
+                    <div class="status-item">
+                        <span class="status-label">Firebase:</span>
+                        <span class="status-value">Ulanish kutilmoqda...</span>
+                    </div>
+                    <div class="status-item">
+                        <span class="status-label">Database:</span>
+                        <span class="status-value">Firestore</span>
+                    </div>
+                </div>
+
+                <div class="admin-buttons">
+                    <a href="http://localhost:3001/dashboard" class="admin-btn admin-btn-primary">
+                        🚀 Dashboard'ga o'tish
+                    </a>
+                    <a href="http://localhost:3001/login" class="admin-btn admin-btn-secondary">
+                        🔑 Login sahifasi
+                    </a>
+                </div>
+
+                <div class="admin-footer">
+                    <p>Server ishga tushirish uchun:</p>
+                    <code style="display: block; background: #1f2125; padding: 10px; border-radius: 10px; margin-top: 10px; color: #71baba;">
+                        npm run dev
+                    </code>
+                </div>
+            </div>
+
+            <div class="admin-footer" style="margin-top: 60px;">
+                <a href="../">← Asosiy sahifaga qaytish</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Check if Next.js server is running
+        fetch('http://localhost:3001/api/health', { mode: 'no-cors' })
+            .then(() => {
+                document.querySelectorAll('.status-value')[0].textContent = '✅ Faol';
+            })
+            .catch(() => {
+                document.querySelectorAll('.status-value')[0].textContent = '❌ Ochiq emas';
+            });
+    </script>
+</body>
+</html>
